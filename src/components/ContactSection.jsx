@@ -12,23 +12,24 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";  
 
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [state, handleSubmit] = useForm("mvgdgpjb"); // Replace 'YOUR_FORM_ID' with your actual Formspree ID
 
-  const handleSubmit = (e) => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
-
     setIsSubmitting(true);
 
-    setTimeout(() => {
+    if (state.succeeded) {
       toast({
-        title: "Message sent!",
+        title: 'Message sent!',
         description: "Thank you for your message. I'll get back to you soon.",
       });
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -113,7 +114,7 @@ export const ContactSection = () => {
           >
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleFormSubmit}>
               <div>
                 <label
                   htmlFor="name"
