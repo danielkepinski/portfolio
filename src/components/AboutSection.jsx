@@ -12,12 +12,12 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web/Software Developer 
+              Passionate Web/Software Developer
             </h3>
 
             <p className="text-muted-foreground">
-              Although new in terms of experience in web development, I really enjoy
-              creating responsive, accessible, and performant web
+              Although new in terms of experience in web development, I really
+              enjoy creating responsive, accessible, and performant web
               applications using modern technologies.
             </p>
 
@@ -35,7 +35,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="https://docs.google.com/document/d/1pZI_nVWa7TuubR4NfMzMIvpUpONiKV-y/edit?usp=sharing&ouid=103191489581619097388&rtpof=true&sd=true"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -81,7 +81,9 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                    Experience working in Agile/Scrum environments through hackathons, coordinating tasks and delivering MVPs under tight deadlines.
+                    Experience working in Agile/Scrum environments through
+                    hackathons, coordinating tasks and delivering MVPs under
+                    tight deadlines.
                   </p>
                 </div>
               </div>

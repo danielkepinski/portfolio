@@ -12,9 +12,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Interactive Quiz App",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Halloween-themed quiz app that tests users' knowledge with spooky questions. This was our project for the code institute Hackathon 'spooktober'",
     image: "/projects/project2.png",
     tags: ["React", "openAI api", "React"],
     demoUrl: "https://haunted-quiz.vercel.app/",
