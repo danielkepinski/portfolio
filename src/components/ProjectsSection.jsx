@@ -3,32 +3,33 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Barbershop Landing page",
-    description: "A beautiful landing page app using Html, Css and Js.",
-    image: "/projects/project1.png",
-    tags: ["HTML", "CSS", "Js"],
-    demoUrl: "http://www.criwbarberservice.uk/",
-    githubUrl: "https://github.com/danielkepinski/criwbarberservice",
+    title: "CardMetric UK",
+    description:
+      "Full-stack Pokémon TCG pricing platform built for the UK market. Features collection tracking, watchlists, historical pricing, Supabase integration, eBay affiliate data, portfolio analytics and responsive dashboards.",
+    image: "/projects/cardmetric.png",
+    tags: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "REST APIs"],
+    demoUrl: "https://cardmetric.co.uk",
+    githubUrl: "https://github.com/danielkepinski/cardpulse-uk",
   },
   {
     id: 2,
-    title: "Interactive Quiz App",
+    title: "Competitor Price Scraper",
     description:
-      "Halloween-themed quiz app that tests users' knowledge with spooky questions. This was our project for the code institute Hackathon 'spooktober'",
-    image: "/projects/project2.png",
-    tags: ["React", "openAI api", "React"],
-    demoUrl: "https://haunted-quiz.vercel.app/",
-    githubUrl:  "https://github.com/JakeSoGreat/haunted-quiz",
+      "Cross-platform desktop application that scrapes Shopify stores, matches products, compares competitor pricing and exports client-ready CSV reports. Built with Python and Tkinter.",
+    image: "/projects/scraper.png",
+    tags: ["Python", "Tkinter", "RapidFuzz", "CSV", "Data Scraping"],
+    demoUrl: "https://github.com/danielkepinski/solepurposescraper",
+    githubUrl: "https://github.com/danielkepinski/solepurposescraper",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "G1M Gardening",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["CSS", "Python", "Stripe"],
-    demoUrl: "https://footballshirt-emporium-05431c39ab7e.herokuapp.com/",
-    githubUrl: "https://github.com/danielkepinski/footballshirtemporium",
+      "Modern business website featuring a lawn measurement estimator, interactive mapping tools, postcode lookup, lead capture forms and automated quote generation.",
+    image: "/projects/g1m.png",
+    tags: ["Next.js", "React", "Tailwind", "Mapbox", "Vercel"],
+    demoUrl: "https://g1more.co.uk",
+    githubUrl: "https://github.com/danielkepinski/g1m-gardening",
   },
 ];
 
@@ -42,11 +43,11 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          A selection of real-world projects covering full-stack development,
+          APIs, automation, data processing and client-facing applications.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, key) => (
             <div
               key={key}
